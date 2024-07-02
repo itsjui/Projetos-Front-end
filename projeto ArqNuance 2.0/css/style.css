@@ -1,0 +1,154 @@
+body{
+    margin: 5px;
+    padding: 5px;
+    font-style: oblique;
+    background-color: #BFB2AA;
+    background-color: gradian
+}
+.navbar .nav-item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 5px 5px;;
+}
+
+.navbar-toggler{
+    border: none;
+}
+.nav-link{
+    color: #262626;
+    font-weight: 500;
+    font-style: italic;
+}
+.nav-link:hover, .nav-item.active{
+    color: black;
+}
+.navbar-brand img{
+    border-radius: 30px;
+}
+.carousel-inner{
+    margin: 2px;
+    width: 1000px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.texto {
+    margin: 5px auto;
+    color: #262626;
+    width: 60%;
+    max-width: 800px; /* Define a largura máxima desejada para o texto */
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    word-wrap: break-word; /* Permite que o texto quebre automaticamente */
+}
+
+#bem{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#titulos{
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 20px;
+}
+.projetos{
+    column-count: 3;
+    column-gap: 10px;
+}
+.projetos img{
+    width: 100%;
+    height: 500px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    cursor:pointer;
+}
+.projetos img:hover{
+    filter: brightness(50%);
+}
+.navbar-custom {
+    background-color: #0d0d0e; /* Cor de fundo desejada */
+    border-radius: 30px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: #201f1f; /* Cor do texto na navbar */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: #4d4646; /* Cor do ícone do botão de toggler */
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-item.active .nav-link {
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Cor de fundo do ícone do WhatsApp */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp:hover {
+    background-color: #128c7e; /* Cor de fundo alterada ao passar o mouse */
+}
+
+.whatsapp svg {
+    width: 40px;
+    height: 40px;
+    fill: #ffffff; /* Cor do ícone do WhatsApp */
+}
+footer {
+    background-color: #6C838C;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .col {
+    flex: 1;
+}
+
+footer a {
+    color: #262626;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+footer .copy {
+    margin-top: 10px;
+
+}

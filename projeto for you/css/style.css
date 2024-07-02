@@ -1,0 +1,176 @@
+body{
+    font-size: medium;
+    font-family: monospace;
+    margin: 30px;
+    padding: 5px;
+    background-image: url(../imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar1{
+    width: 800px;
+    max-width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+    background-color: #F2CECE;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 5px #6D8C84;
+}
+.navbar1 .icon{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar1 .icon img{
+    width: 100px;
+    height: auto;    
+    border-radius: 30px;
+    background-image: none;
+}
+.navbar1 .search{
+    flex: 2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.search .pesquisar-input{
+    width: 70%;
+    height: 20px;
+    background-color: #BF9F9F;
+}
+.search .botao-pesquisa{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #F2CECE;
+}
+.navbar1 .pesquisar-input:hover{
+    background-color: #F2BBBB;
+}
+.navbar1 .usuario{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.usuario .user-login, .usuario .carrinho{
+    border: none;
+    background-color: #F2CECE;
+    padding: 10px;
+    border-radius: 5px;
+}
+svg{
+    color: #86A69D;
+}
+svg:hover{
+    color: #6D8C84;
+}
+.navbar2{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(134, 166, 157, 0.5);
+    display: flex;
+    justify-content: left;
+    gap: 25px;
+    align-items: center;
+    padding-left: 30px;
+    margin-top: 5px;
+}
+.navbar2 a{
+    font-size: medium;
+    text-decoration: none;
+    color: #161616
+}
+.navbar2 a:hover{
+    color: #F2CECE;
+}
+
+.container-img{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.container-img .item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: auto;
+
+}
+.container-img .itens{
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s; /* Adiciona transição para opacity e transform */
+    transform: scale(0.8);
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+.container-img .itens.on {
+    opacity: 1;
+    transform: scale(1); /* Escala normal para o item atual */
+    z-index: 1; /* Garante que o item ativo esteja acima dos outros */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adiciona um box-shadow para destacar */
+    cursor: pointer;
+}
+.container-img .item:hover .itens {
+    opacity: 0.8;
+    transform: scale(1.1); /* Aumenta um pouco o tamanho da imagem ao passar o mouse */
+    z-index: 1; /* Mantém a imagem ativa acima das outras */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para destacar a imagem */
+    cursor: pointer;
+}
+.titulo p{
+    font-size:40px;
+    text-align: center;
+    font-family: monospace;
+    
+}
+.titulo{
+    background-color: rgba(134, 166, 157, 0.5);
+    height: 60px;
+    margin-top: 5px;
+}
+
+p{
+    font-size: medium;
+    text-align: center;
+}
+
+.tendencias{
+    column-count: 6;
+    margin-top: 5px;
+    width: 100%;
+    height: 700px;
+    
+}
+.itemTendencias{
+    break-inside: avoid;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.itemTendencias img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 5px;
+}
